@@ -2,24 +2,24 @@ import { Task } from './types'
 import { Dispatch } from 'react'
 import { TaskActionType, ActionTypes } from './reducer'
 
-export const addTaskAction = (dispatch: Dispatch<TaskActionType>) => (
+export const addTask = (dispatch: Dispatch<TaskActionType>) => (
   task: Task
 ) => dispatch({ type: ActionTypes.ADD_TASK, payload: task })
 
-export const toggleTaskAction = (dispatch: Dispatch<TaskActionType>) => (
+export const toggleTask = (dispatch: Dispatch<TaskActionType>) => (
   task: Task
 ) => dispatch({ type: ActionTypes.TOGGLE_TASK, payload: task })
 
-export const clearTasksAction = (dispatch: Dispatch<TaskActionType>) => () =>
+export const clearTasks = (dispatch: Dispatch<TaskActionType>) => () =>
   dispatch({ type: ActionTypes.CLEAR_TASKS })
 
-export const changeFiltersAction = (dispatch: Dispatch<TaskActionType>) => (
+export const changeFilters = (dispatch: Dispatch<TaskActionType>) => (
   status?: boolean
 ) => dispatch({ type: ActionTypes.FILTER, payload: status })
 
 export default {
-  addTaskAction,
-  toggleTaskAction,
-  clearTasksAction,
-  changeFiltersAction
+  addTask,
+  toggleTask,
+  clearTasks,
+  changeFilters
 }

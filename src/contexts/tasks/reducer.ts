@@ -1,9 +1,9 @@
-import { TaskState } from "./types"
+import { TaskState } from './types'
 
 export enum ActionTypes {
-  ADD_TASK = "add_task",
-  CLEAR_TASKS = "clear_tasks",
-  TOGGLE_TASK = "toggle_task",
+  ADD_TASK = 'add_task',
+  CLEAR_TASKS = 'clear_tasks',
+  TOGGLE_TASK = 'toggle_task',
   FILTER = 'filter_task'
 }
 

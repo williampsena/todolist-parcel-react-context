@@ -2,10 +2,10 @@ import React, { createContext, FunctionComponent, useReducer } from 'react'
 import { TaskContextState, TaskState } from './types'
 import { TaskReducer } from './reducer'
 import {
-  addTaskAction,
-  toggleTaskAction,
-  clearTasksAction,
-  changeFiltersAction
+  addTask,
+  toggleTask,
+  clearTasks,
+  changeFilters
 } from './actions'
 
 export const TaskContext = createContext<TaskContextState | null>(null)
@@ -24,10 +24,10 @@ export const TaskContextProvider: FunctionComponent<
     dispatch,
     state,
     actions: {
-      addTask: addTaskAction(dispatch),
-      toggleTask: toggleTaskAction(dispatch),
-      clearTasks: clearTasksAction(dispatch),
-      changeFilters: changeFiltersAction(dispatch)
+      addTask: addTask(dispatch),
+      toggleTask: toggleTask(dispatch),
+      clearTasks: clearTasks(dispatch),
+      changeFilters: changeFilters(dispatch)
     }
   }
 
