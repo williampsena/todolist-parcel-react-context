@@ -1,4 +1,4 @@
-# Todo list with React + Context + Parcel.js
+# Todo list with React + Context + Parcel.js + TypeScript
 
 ## Table of Contents
 
@@ -15,6 +15,7 @@
 ## Requirements
 
  - Node.js (v.10.x)
+ - TypeScript
  - Parcel.js
  - Yarn (optional)
 
