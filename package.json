@@ -1,0 +1,24 @@
+{
+  "name": "todolist-parcel-react-context",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "parcel src/index.html -d dev --target=browser",
+    "build": "parcel build src/index.html"
+  },
+  "author": "William Sena",
+  "license": "ISC",
+  "dependencies": {
+    "glamor": "^2.20.40",
+    "json5": "^2.1.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.17",
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.1",
+    "typescript": "^3.4.5"
+  }
+}
